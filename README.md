@@ -1,7 +1,5 @@
-# Guess-Jack-s-Picture
-A website where you have to guess my Microsoft Paint picture! 
-
-<br/>
+<h2  align="center">Guess-Jack-s-Picturee</h2>
+<p  align="center">A website where you have to guess my Microsoft Paint picture! </p>
 
 <p align="center">
   <img src="https://i.gyazo.com/a63463412ce1ee837b73bb00b434fb9c.png"/>
