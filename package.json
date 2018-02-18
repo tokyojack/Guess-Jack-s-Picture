@@ -1,18 +1,10 @@
 {
-  "name": "todoify",
+  "name": "guess_jack_pictire",
   "version": "1.0.0",
-  "description": "You can create different todo-lists with different names/items",
+  "description": "A website wher eyou have to guess my Microsoft Paint picture!",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "a"
-  },
-  "author": "Jack Clarke",
-  "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.18.2",
     "colors": "^1.1.2",
     "cookie-parser": "^1.4.3",
@@ -20,9 +12,29 @@
     "delayed": "^1.0.1",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
-    "express-flash": "0.0.2",
+    "express-flash": "^0.0.2",
     "express-session": "^1.15.6",
-    "http": "0.0.0",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.0",
+    "mysql": "^2.15.0",
+    "mysql-pool": "^0.2.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "require-sql": "^1.0.0",
     "socket.io": "^2.0.4"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokyojack/Guess-Jacks-Picture.git"
+  },
+  "author": "Jack Clarke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tokyojack/Guess-Jacks-Picture/issues"
+  },
+  "homepage": "https://github.com/tokyojack/Guess-Jacks-Picture#readme"
 }
