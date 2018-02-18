@@ -1,0 +1,149 @@
+<<!DOCTYPE html >
+    <html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Messengerino</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <!--cHANGE-->
+      <link rel="stylesheet" type="text/css" href="/css/utils/normalize.css">
+         <link rel="stylesheet" href="/css/index.css">
+         
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   </head>
+   <body>
+       
+                <% if(success && success.length >= 1){ %>
+               <script>
+                    Materialize.toast('<%= success %>', 5000, 'rounded toastSuccess');
+                  </script>
+               <% } %>
+                           <% if(error && error.length >= 1){ %>
+                  <script>
+                    Materialize.toast('<%= error %>', 5000, 'rounded toastError');
+                  </script>
+               <% } %>
+               
+               
+               
+               
+
+
+
+   <ul id="slide-out" class="side-nav fixed">
+      <li>
+         <div class="user-view">
+            <div class="background">
+               <img src="/images/todos.jpg">
+            </div>
+            <a href="/home"><h1 class="title">Guess Jack's Picture</h1></a>
+           <span  class="white-text name hidden">a</span>
+           <span id="username-span" class="white-text name hidden">a</span>
+                           <input placeholder="Message" type="text" id="message-input" class="validate">
+
+         </div>
+         
+      </li>
+      
+
+
+
+    <table class="bordered">
+
+
+        <tbody>
+        
+        </tbody>
+      </table>
+
+
+
+   </ul>
+   <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons" id="menuIcon">menu</i></a>
+
+<main>
+    
+    
+
+    
+    
+    
+    
+    
+    <div class="container">
+                       <img id="guessing-picture" src="/guessingImages/<%= currentPicture %>">
+
+      </div>
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </main>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Pick an username</h4>
+          <input placeholder="username" type="text" id="username-input" class="validate">
+    </div>
+    <div class="modal-footer">
+      <button id="continue-button" class="modal-action modal-close waves-effect waves-green btn-flat ">Continue</button>
+    </div>
+  </div>
+          
+    
+    
+    
+<script>
+         $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+  
+       $(".button-collapse").sideNav();
+
+    $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      draggable: true // Choose whether you can drag to open on touch screens,
+    }
+  );
+    $(document).ready(function(){
+  $('.modal').modal({
+      dismissible: false
+    }
+  );    
+    
+    
+    $('.modal').modal('open');
+  });
+          
+
+</script>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.slim.js"></script>
+
+<script type="text/javascript" src="/js/index.js"></script>
+
+
+
+ </body>
+</html>
