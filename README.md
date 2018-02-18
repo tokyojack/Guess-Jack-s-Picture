@@ -4,7 +4,7 @@ A website where you have to guess my Microsoft Paint picture!
 <br/>
 
 <p align="center">
-  <img src="https://i.gyazo.com/cf1758438e645495a00af15d15b5b7dc.png"/>
+  <img src="https://imgur.com/a/qznE7" style="border: 6px solid black;"/>
 </p>
 
 ## Installing
