@@ -1,17 +1,8 @@
 {
-  "name": "todoify",
+  "name": "guess_jacks_picture",
   "version": "1.0.0",
-  "description": "You can create different todo-lists with different names/items",
+  "description": "A website where you have to guess my Microsoft Paint picture!",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "a"
-  },
-  "author": "Jack Clarke",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "colors": "^1.1.2",
@@ -24,5 +15,19 @@
     "express-session": "^1.15.6",
     "http": "0.0.0",
     "socket.io": "^2.0.4"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokyojack/Guess-Jacks-Picture.git"
+  },
+  "author": "Jack Clarke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tokyojack/Guess-Jacks-Picture/issues"
+  },
+  "homepage": "https://github.com/tokyojack/Guess-Jacks-Picture#readme"
 }
