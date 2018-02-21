@@ -41,6 +41,9 @@ var UIController = (function() {
         clearMessageInput: function() {
             getNewMessageElement().value = '';
         },
+        clearMessages: function(){
+            $("tbody tr").remove(); 
+        },
         getDOMstrings: function() {
             return DOMstrings;
         }
@@ -81,6 +84,7 @@ var controller = (function(socketCtrl, UICtrl) {
         socket.on("player_win", function(data) {
             document.querySelector('#message-input').value  = '';
             document.querySelector('#message-input').disabled = true;
+            UICtrl.clearMessages();
             Materialize.toast("'" + data.username + "' won with '" + data.message + "'", 3500, 'rounded toastSuccess');
         });
 
