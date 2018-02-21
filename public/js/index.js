@@ -4,7 +4,7 @@ var socketController = (function() {
     return {
         sendMessage: function(message, socket) {
             var username = document.querySelector('#username').innerHTML;
-            socket.emit('message', { username: username, message: message });
+            socket.emit('message', { username: username, message: message.toLocaleLowerCase() });
         }
     };
 
