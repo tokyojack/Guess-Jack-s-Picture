@@ -7,9 +7,7 @@ module.exports = function(socket, io) {
         if (message.message == currentPictureManager.getCurrentPicture()) {
             io.emit('player_win', message);
 
-            delayed.delay(function() {
-                // TODO  Get new picture turns new?
-                
+            delayed.delay(function() {                
                 currentPictureManager.getNewPicture();
                 io.emit('picture_switch', currentPictureManager.getCurrentPicture());
             }, 3500)

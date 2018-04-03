@@ -1,4 +1,5 @@
 var router = require("express").Router();
+
 var currentPictureManager = require('./../managers/currentPictureManager')
 
 // URL: "/"
