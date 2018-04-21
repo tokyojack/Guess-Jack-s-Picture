@@ -15,7 +15,7 @@ var UIController = (function() {
     var DOMstrings = {
         messageInput: '#message-input',
         usernameInput: '#username-input',
-        usernameSpan: '#username-span', //TODO change name?
+        usernameSpan: '#username-span',
         username: '#username',
         continueButton: '#continue-button'
     };
