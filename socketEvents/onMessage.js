@@ -13,7 +13,7 @@ module.exports = function(socket, io) {
             delayed.delay(function() {                
                 currentPictureManager.getNewPicture();
                 io.emit('picture_switch', currentPictureManager.getCurrentPicture());
-            }, 3500)
+            }, 3500);
 
             return; // Stop's the correct answer from being messaged
         }

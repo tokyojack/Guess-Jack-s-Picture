@@ -13,13 +13,9 @@ var colors = require('colors');
 //============================= Letting express use them =============================
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(__dirname + "/public"));
-
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-
 app.use(bodyParser.json());
+
+app.use(express.static(__dirname + "/public"));
 
 //============================= Routes =============================
 
